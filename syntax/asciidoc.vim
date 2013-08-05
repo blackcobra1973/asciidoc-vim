@@ -168,14 +168,14 @@ hi def link asciidocGlossary Keyword
 hi def link asciidocHLabel Constant
 hi def link asciidocInclude PreProc
 hi def link asciidocQuestion Todo
-hi def link asciidocQuotedBold Type
+hi def link asciidocQuotedBold htmlBold 
 hi def link asciidocQuotedDoubleQuoted Type
-hi def link asciidocQuotedEmphasized Type
+hi def link asciidocQuotedEmphasized htmlItalic
 hi def link asciidocQuotedMonospaced Type
-hi def link asciidocQuotedUnconstrainedBold Type
-hi def link asciidocQuotedUnconstrainedEmphasized Type
+hi def link asciidocQuotedUnconstrainedBold htmlBold
+hi def link asciidocQuotedUnconstrainedEmphasized htmlItalic
 hi def link asciidocQuotedUnconstrainedMonospaced Type
-hi def link asciidocQuotedSingleQuoted Type
+hi def link asciidocQuotedSingleQuoted Constant
 hi def link asciidocQuotedSubscript Type
 hi def link asciidocQuotedSuperscript Type
 hi def link asciidocReference Keyword
@@ -184,6 +184,7 @@ hi def link asciidocRevisionInfo PreProc
 hi def link asciidocSource PreProc
 hi def link asciidocToDo Todo
 hi def link asciidocTripplePlusPassthrough Special
+
 "Attributes
 highlight asciidocAttributeEntry term=standout ctermfg=darkgreen guifg=darkgreen
 highlight asciidocAttributeList term=standout ctermfg=darkgreen guifg=darkgreen
@@ -192,75 +193,75 @@ highlight link asciidocAttributeMacro Macro
 highlight asciidocAttributeRef term=standout,underline ctermfg=darkgreen cterm=bold,underline guifg=darkgreen gui=bold,underline
 
 "Lists
-highlight asciidocListBlockDelimiter term=bold ctermfg=darkcyan cterm=bold guifg=darkcyan gui=bold
-highlight asciidocListBullet term=bold ctermfg=darkcyan cterm=bold guifg=darkcyan gui=bold
-highlight asciidocListContinuation term=bold ctermfg=darkcyan cterm=bold guifg=darkcyan gui=bold
-highlight asciidocListLabel term=underline ctermfg=darkgreen cterm=underline guifg=darkgreen gui=underline
-highlight asciidocListNumber term=bold ctermfg=darkcyan cterm=bold guifg=darkcyan gui=bold
+hi def link asciidocListBlockDelimiter Underlined
+"highlight asciidocListBullet term=bold ctermfg=darkcyan cterm=bold guifg=darkcyan gui=bold
+"highlight asciidocListContinuation term=bold ctermfg=darkcyan cterm=bold guifg=darkcyan gui=bold
+hi def link asciidocListLabel Underlined
+"highlight asciidocListNumber term=bold ctermfg=darkcyan cterm=bold guifg=darkcyan gui=bold
 
 "Sections
-hi def link asciidocSect0 DiffText
-hi def link asciidocSect1 DiffText
-hi def link asciidocSect2 DiffText 
-hi def link asciidocSect3 DiffText
-hi def link asciidocSect4 DiffText
-hi def link asciidocSect0Old DiffText
-hi def link asciidocSect1Old DiffText
-hi def link asciidocSect2Old DiffText
-hi def link asciidocSect3Old DiffText
-hi def link asciidocSect4Old DiffText
+hi def link asciidocSect0 Identifier
+hi def link asciidocSect1 Identifier
+hi def link asciidocSect2 Identifier 
+hi def link asciidocSect3 Identifier
+hi def link asciidocSect4 Identifier
+hi def link asciidocSect0Old Identifier
+hi def link asciidocSect1Old Identifier
+hi def link asciidocSect2Old Identifier
+hi def link asciidocSect3Old Identifier
+hi def link asciidocSect4Old Identifier
 
 "Links
-highlight asciidocEmail term=underline ctermfg=darkred cterm=underline guifg=darkred gui=underline
-highlight asciidocLink term=underline ctermfg=darkred cterm=underline guifg=darkred gui=underline
-highlight asciidocOneLineTitle ctermfg=darkyellow guifg=darkyellow gui=underline
-highlight asciidocTwoLineTitle ctermfg=darkyellow guifg=darkyellow gui=underline
-highlight asciidocURL term=underline ctermfg=darkred cterm=underline guifg=darkred gui=underline
+hi def link asciidocEmail Underlined
+hi def link asciidocLink Underlined
+hi def link asciidocOneLineTitle Underlined
+hi def link asciidocTwoLineTitle Underlined
+hi def link asciidocURL Underlined
 
 "Blocks
-highlight asciidocBlockTitle term=underline ctermfg=darkgreen cterm=underline guifg=darkgreen gui=underline
-highlight asciidocExampleBlockDelimiter term=standout ctermfg=darkyellow guifg=darkyellow
-highlight asciidocFilterBlock term=standout ctermfg=darkyellow guifg=darkyellow
-highlight asciidocListingBlock term=standout ctermfg=darkyellow guifg=darkyellow
-highlight asciidocLiteralBlock term=standout ctermfg=darkyellow guifg=darkyellow
-highlight asciidocLiteralParagraph term=standout ctermfg=darkyellow guifg=darkyellow
-highlight asciidocQuoteBlockDelimiter term=standout ctermfg=darkyellow guifg=darkyellow
-highlight asciidocSidebarDelimiter term=standout ctermfg=darkyellow guifg=darkyellow
+hi def link asciidocBlockTitle Type
+hi def link asciidocExampleBlockDelimiter Type
+hi def link asciidocFilterBlock Type
+hi def link asciidocListingBlock Type
+hi def link asciidocLiteralBlock Type
+hi def link asciidocLiteralParagraph Type
+hi def link asciidocQuoteBlockDelimiter Type
+hi def link asciidocSidebarDelimiter Type
 
 "Tables
 highlight link asciidocTableBlock2 NONE
 highlight link asciidocTableBlock NONE
-highlight asciidocTableDelimiter2 term=standout ctermfg=darkcyan guifg=darkcyan
-highlight asciidocTableDelimiter term=standout ctermfg=darkcyan guifg=darkcyan
-highlight asciidocTable_OLD term=standout ctermfg=darkyellow guifg=darkyellow
-highlight asciidocTablePrefix2 term=standout ctermfg=darkcyan guifg=darkcyan
-highlight asciidocTablePrefix term=standout ctermfg=darkcyan guifg=darkcyan
+"highlight asciidocTableDelimiter2 term=standout ctermfg=darkcyan guifg=darkcyan
+"highlight asciidocTableDelimiter term=standout ctermfg=darkcyan guifg=darkcyan
+"highlight asciidocTable_OLD term=standout ctermfg=darkyellow guifg=darkyellow
+"highlight asciidocTablePrefix2 term=standout ctermfg=darkcyan guifg=darkcyan
+"highlight asciidocTablePrefix term=standout ctermfg=darkcyan guifg=darkcyan
 
 "Comments
-highlight asciidocCommentBlock term=standout ctermfg=darkblue guifg=darkblue
-highlight asciidocCommentLine term=standout ctermfg=darkblue guifg=darkblue
+hi def link asciidocCommentBlock Comment
+hi def link asciidocCommentLine Comment
 
 "Macros
-highlight asciidocAnchorMacro term=standout ctermfg=darkred guifg=darkred
-highlight link asciidocIndexTerm Macro
-highlight asciidocMacro term=underline ctermfg=darkred cterm=underline guifg=darkred gui=underline
-highlight asciidocMacroAttributes term=bold ctermfg=darkyellow guifg=darkyellow
-highlight asciidocRefMacro term=standout ctermfg=darkred guifg=darkred
+hi def link asciidocAnchorMacro PreProc
+hi def link asciidocIndexTerm PreProc
+hi def link asciidocMacro PreProc
+hi def link asciidocMacroAttributes PreProc
+hi def link asciidocRefMacro Special
 
 "Other
 highlight link asciidocCallout Label
-highlight link asciidocEntityRef Special
-highlight link asciidocIdMarker Special
-highlight link asciidocLineBreak Special
-highlight link asciidocPagebreak Type
-highlight link asciidocPassthroughBlock Identifier
-highlight link asciidocRuler Type
+highlight link asciidocEntityRef Label
+highlight link asciidocIdMarker Label
+highlight link asciidocLineBreak Label
+highlight link asciidocPagebreak Label
+highlight link asciidocPassthroughBlock Label
+highlight link asciidocRuler Label
 
 let b:current_syntax = "asciidoc"
 
 "Show tab and trailing characters
-set listchars=tab:»·,trail:·
-set list
+"set listchars=tab:»·,trail: 
+"set list
 
 "
 "set textwidth=78 formatoptions=tcqn autoindent
