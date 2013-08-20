@@ -212,11 +212,11 @@ hi def link asciidocSect3Old Identifier
 hi def link asciidocSect4Old Identifier
 
 "Links
-hi def link asciidocEmail Underlined
-hi def link asciidocLink Underlined
-hi def link asciidocOneLineTitle Underlined
-hi def link asciidocTwoLineTitle Underlined
-hi def link asciidocURL Underlined
+hi def link asciidocEmail Identifier
+hi def link asciidocLink Identifier
+hi def link asciidocOneLineTitle Identifier
+hi def link asciidocTwoLineTitle Identifier
+hi def link asciidocURL Identifier
 
 "Blocks
 hi def link asciidocBlockTitle Type
@@ -244,8 +244,8 @@ hi def link asciidocCommentLine Comment
 "Macros
 hi def link asciidocAnchorMacro PreProc
 hi def link asciidocIndexTerm PreProc
-hi def link asciidocMacro PreProc
-hi def link asciidocMacroAttributes PreProc
+hi def link asciidocMacro Identifier
+hi def link asciidocMacroAttributes Type
 hi def link asciidocRefMacro Special
 
 "Other
